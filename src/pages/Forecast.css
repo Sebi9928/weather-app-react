@@ -1,0 +1,70 @@
+.forecast-card {
+  background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+ background-blend-mode: screen;
+    color: white;
+    max-width: 25rem;
+    margin-left: 40%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    backdrop-filter: blur(10px);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .forecast-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  .forecast{
+    margin-top: 10%;
+  }
+  
+  .img-for {
+    margin-left: 10px;
+  }
+  
+  .forecast-card:hover > .img {
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(#9198e5, #712020);
+  }
+  
+  .textBox {
+    width: calc(100% - 90px);
+    margin-left: 10px;
+    color: white;
+    font-family: 'Poppins' sans-serif;
+  }
+  
+  .textContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .txt-fr {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  
+  .p-fr {
+    font-size: 16px;
+    font-weight: lighter;
+  }
+  
+  @media (max-width: 768px) {
+    .forecast-card {
+      width: 90%;
+      height: auto;
+      padding: 10px;
+      margin-top: 10%;
+      margin-left: 30px;
+      margin-bottom: 5%;
+    }
+}
